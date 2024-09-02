@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 69px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: url(#Gradiente_sem_nome_94);
+      }
+
+      .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        stroke-width: 72px;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+    <linearGradient id="Gradiente_sem_nome_94" data-name="Gradiente sem nome 94" x1="865.54" y1="-23.85" x2="214.46" y2="1103.85" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ec666b"/>
+      <stop offset=".23" stop-color="#fdc731"/>
+      <stop offset=".49" stop-color="#8cbf33"/>
+      <stop offset=".76" stop-color="#4994c4"/>
+      <stop offset="1" stop-color="#6d4f9c"/>
+    </linearGradient>
+  </defs>
+  <rect class="cls-3" width="1080" height="1080" rx="236.63" ry="236.63"/>
+  <rect class="cls-2" x="176.87" y="177.73" width="726.45" height="726.45" rx="187.91" ry="187.91"/>
+  <circle class="cls-1" cx="539.97" cy="539.83" r="168.58"/>
+  <circle class="cls-4" cx="753.09" cy="326.33" r="47.91"/>
+</svg>
