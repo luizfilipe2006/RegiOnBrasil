@@ -1,0 +1,863 @@
+/* INDEX */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* espessura */
+  } /* fonte */
+.navbar {
+    background-color: #000 !important;
+    transition: top 0.3s; /* animação */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.navbar.hide {
+    top: -100px; /* esconde quando scrolar */
+}
+.navbar.initial {
+    position: static;
+}
+.navbar.fixed {
+    position: fixed;
+    top: 0;
+}
+.navbar.show {
+    top: 0;
+}
+.navbar-nav .nav-link,
+.navbar-brand {
+    color: #fff !important;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-brand:hover,
+.navbar-brand:focus {
+    color: #ccc !important;
+}
+.navbar-toggler {
+    border: none;
+}
+.navbar-toggler-icon {
+    background-color: #fff;
+    border-radius: 3px;
+}
+.parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    min-height: 1080px;
+    position: relative;
+}
+.scroll-indicator {
+    position: absolute;
+    bottom: 350px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2em;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    animation: bounce 1.5s infinite;
+} /* seta */
+.section {
+    padding: 50px 15px;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+} /* texto do parallax */
+.section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+@keyframes bounce { /*animação da seta*/
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+.roda {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.roda .down_meio {
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.roda .down_down span {
+    display: inline-block;
+    margin: 0 15px;
+}
+.roda .down_down img {
+    width: 25px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+.roda .down_down img:hover {
+    transform: scale(1.2);
+}
+.link {
+    display: inline-block;
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+.educational-note { /* "para fins educativos" */
+    font-size: 0.875em;
+    color: #808080;
+}
+.color-buttons {
+    position: absolute;
+    bottom: 27px;
+    left: 92%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+}
+.color-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: transform 0.3s;
+}
+.color-btn:hover {
+    transform: scale(1.1);
+}
+@media (max-width: 992px) { /* faz com que os botões de cores sejam responsívos quando o menu for recolhído */
+    .color-buttons {
+        position: static; /* altera a posição para padrão */
+        transform: none; /* remove transformação */
+        bottom: auto; /* remove o ajuste de posição */
+        left: auto; /* remove o ajuste de posição */
+        justify-content: center; /* centraliza os botões horizontalmente */
+        margin-top: 10px; /* adiciona um espaço entre os botões e outros elementos */
+    }
+
+    .color-btn {
+        margin: 5px; /* ajusta o espaçamento entre os botões */
+    }
+
+    .navbar-collapse {
+        display: flex; /* certifica que a navbar se expande corretamente */
+        flex-direction: column; /* alinha os itens em coluna */
+        align-items: center; /* centraliza os itens */
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap'); /* poppins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* BRASIL */
+
+.corletra {
+    color:white;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.itens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin-top: 70px; /* adiciona um espaço entre o menu e os cartões */
+}
+/* carde norte */
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 700px;
+    position: relative;
+    background-image: url('img/card-norte.png');
+    background-position: center; /* Centraliza a imagem */
+    /* border-radius: 20px; */
+    box-shadow: 0px 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.7s;
+    opacity: 0.5;
+}
+
+.card:hover {
+    width: 2000px; /* quando passar o mause almentar o bloco apenas sua largura */
+    opacity: 1;
+    
+}
+
+.card .img-box {
+    position: absolute;
+    text-align: center; /* alinhar ao centro */
+    width: 350px;
+    height: auto; 
+    top: 100px;
+    transition: 0.5s;
+}
+
+.card:hover .img-box { /* aki onde a img mexe, usar para girar o mapa da região do Brasil */
+    top: 10px;
+    scale: 0.75; /* diminui a img, talvez tirar */
+}
+
+.card .img-box img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    
+}
+
+.card .content {
+    display: flex;
+    flex-direction: column;
+    gap: 18px; /* diferença de altura do textro pro botão read more e titulo*/
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    padding: 0px 30px;
+    text-align: center;
+    height: 30px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card:hover .content {
+    top: 130px; /* aki pra colocar o texto certo com a imagem */
+    height: 550px;
+
+}
+
+.card .iconeG1 {
+    background-image: url(img/G1.svg); 
+    padding: 15px;
+    width: 100px; /* tamanho do botão de musica/comida artura */
+    height: 100px;/* tamanho do botão de musica/comida largura*/
+    text-decoration: none;
+    /* border-radius: 8px; */
+    transition: 0.5s ease; /* Adiciona transição suave para o movimento */
+    position: relative;
+    top: 0; /* Posição inicial do botão */
+    display: block; /* Garantir que o elemento seja um bloco */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+
+}
+
+.card:hover .iconeG1 {
+    top: 20%; /* Move o botão para baixo ao passar o mouse */
+   
+}
+
+.card:hover .iconeG1:hover {
+    scale: 1.2;
+   
+}
+
+.card .iconeG2 {
+    background-image: url(img/G2.svg); 
+    padding: 12px;
+    width: 100px; /* tamanho do botão de musica/comida artura */
+    height: 100px;/* tamanho do botão de musica/comida largura*/
+    text-decoration: none;
+    /* border-radius: 8px; */
+    transition: 0.5s ease; /* Adiciona transição suave para o movimento */
+    position: relative;
+    top: 0; /* Posição inicial do botão */
+    display: block; /* Garantir que o elemento seja um bloco */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+}
+
+.card:hover .iconeG2 {
+    top: 20%; /* Move o botão para baixo ao passar o mouse */
+   
+}
+.card:hover .iconeG2:hover {
+    scale: 1.2;
+   
+}
+
+.card .iconeG3 {
+    background-image: url(img/G3.svg); 
+    padding: 12px;
+    width: 100px; /* tamanho do botão de musica/comida artura */
+    height: 100px;/* tamanho do botão de musica/comida largura*/
+    text-decoration: none;
+    /* border-radius: 8px; */
+    transition: 0.5s ease; /* Adiciona transição suave para o movimento */
+    position: relative;
+    top: 0; /* Posição inicial do botão */
+    display: block; /* Garantir que o elemento seja um bloco */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+
+}
+
+.card:hover .iconeG3 {
+    top: 20%; /* Move o botão para baixo ao passar o mouse */
+   
+}
+.card:hover .iconeG3:hover {
+    scale: 1.2;
+   
+}
+
+/* carde nordeste */
+
+.card1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 700px;
+    position: relative;
+    background-image: url('img/Card-Nordeste.png');
+    background-position: center; /* Centraliza a imagem */
+    box-shadow: 0px 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.7s;
+    opacity: 0.5;
+}
+
+.card1:hover {
+    width: 2000px; /* quando passar o mause almentar o bloco apenas sua largura */
+    opacity: 1;
+    
+}
+
+.card1 .img-box {
+    position: absolute;
+    text-align: center; /* alinhar ao centro */
+    width: 350px;
+    height: auto; 
+    top: 100px;
+    transition: 0.5s;
+}
+
+.card1:hover .img-box { /* aki onde a img mexe, usar para girar o mapa da região do Brasil */
+    top: 10px;
+    scale: 0.75; /* diminui a img, talvez tirar */
+}
+
+.card1 .img-box img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    
+}
+
+.card1 .content {
+    display: flex;
+    flex-direction: column;
+    gap: 18px; /* diferença de altura do textro pro botão read more e titulo*/
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    padding: 0px 30px;
+    text-align: center;
+    height: 30px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card1:hover .content {
+    top: 130px; /* aki pra colocar o texto certo com a imagem */
+    height: 550px;
+
+}
+
+.card1 .iconeV1 {
+    background-image: url(img/V1.svg); 
+    padding: 15px;
+    width: 100px; /* tamanho do botão de musica/comida artura */
+    height: 100px;/* tamanho do botão de musica/comida largura*/
+    text-decoration: none;
+    /* border-radius: 8px; */
+    transition: 0.5s ease; /* Adiciona transição suave para o movimento */
+    position: relative;
+    top: 0; /* Posição inicial do botão */
+    display: block; /* Garantir que o elemento seja um bloco */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+
+}
+
+.card1:hover .iconeV1 {
+    top: 20%; /* Move o botão para baixo ao passar o mouse */
+   
+}
+
+.card1:hover .iconeV1:hover {
+    scale: 1.2;
+   
+}
+
+.card1 .iconeV2 {
+    background-image: url(img/V2.svg); 
+    padding: 12px;
+    width: 100px; /* tamanho do botão de musica/comida artura */
+    height: 100px;/* tamanho do botão de musica/comida largura*/
+    text-decoration: none;
+    /* border-radius: 8px; */
+    transition: 0.5s ease; /* Adiciona transição suave para o movimento */
+    position: relative;
+    top: 0; /* Posição inicial do botão */
+    display: block; /* Garantir que o elemento seja um bloco */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+}
+
+.card1:hover .iconeV2 {
+    top: 20%; /* Move o botão para baixo ao passar o mouse */
+   
+}
+.card1:hover .iconeV2:hover {
+    scale: 1.2;
+   
+}
+
+.card1 .iconeV3 {
+    background-image: url(img/V3.svg); 
+    padding: 12px;
+    width: 100px; /* tamanho do botão de musica/comida artura */
+    height: 100px;/* tamanho do botão de musica/comida largura*/
+    text-decoration: none;
+    /* border-radius: 8px; */
+    transition: 0.5s ease; /* Adiciona transição suave para o movimento */
+    position: relative;
+    top: 0; /* Posição inicial do botão */
+    display: block; /* Garantir que o elemento seja um bloco */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+
+}
+
+.card1:hover .iconeV3 {
+    top: 20%; /* Move o botão para baixo ao passar o mouse */
+   
+}
+.card1:hover .iconeV3:hover {
+    scale: 1.2;
+   
+}
+
+
+
+/* card centro */
+
+.card2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 700px;
+    position: relative;
+    background-image: url('img/Card-Centro-Oeste.png');
+    background-position: center; /* Centraliza a imagem */
+ 
+    box-shadow: 0px 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.7s;
+    opacity: 0.5;
+}
+
+.card2:hover {
+    width: 2000px; /* quando passar o mause almentar o bloco apenas sua largura */
+    opacity: 1;
+}
+
+.card2 .img-box {
+    position: absolute;
+    text-align: center; /* alinhar ao centro */
+    width: 350px;
+    height: auto; 
+    top: 100px;
+    transition: 0.5s;
+}
+
+.card2:hover .img-box { /* aki onde a img mexe, usar para girar o mapa da região do Brasil */
+    top: 10px;
+    scale: 0.75; /* diminui a img, talvez tirar */
+}
+
+.card2 .img-box img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    
+}
+
+.card2 .content {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    padding: 0px 30px;
+    text-align: center;
+    height: 30px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card2:hover .content {
+    top: 130px; /* aki pra colocar o texto certo com a imagem */
+    height: 550px;
+
+}
+
+.card2 .iconeY1 {
+    background-image: url(img/Y1.svg); 
+    padding: 15px;
+    width: 100px; /* tamanho do botão de musica/comida artura */
+    height: 100px;/* tamanho do botão de musica/comida largura*/
+    text-decoration: none;
+    /* border-radius: 8px; */
+    transition: 0.5s ease; /* Adiciona transição suave para o movimento */
+    position: relative;
+    top: 0; /* Posição inicial do botão */
+    display: block; /* Garantir que o elemento seja um bloco */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+
+}
+
+.card2:hover .iconeY1 {
+    top: 20%; /* Move o botão para baixo ao passar o mouse */
+   
+}
+
+.card2:hover .iconeY1:hover {
+    scale: 1.2;
+   
+}
+
+.card2 .iconeY2 {
+    background-image: url(img/Y2.svg); 
+    padding: 12px;
+    width: 100px; /* tamanho do botão de musica/comida artura */
+    height: 100px;/* tamanho do botão de musica/comida largura*/
+    text-decoration: none;
+    /* border-radius: 8px; */
+    transition: 0.5s ease; /* Adiciona transição suave para o movimento */
+    position: relative;
+    top: 0; /* Posição inicial do botão */
+    display: block; /* Garantir que o elemento seja um bloco */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+}
+
+.card2:hover .iconeY2 {
+    top: 20%; /* Move o botão para baixo ao passar o mouse */
+   
+}
+.card2:hover .iconeY2:hover {
+    scale: 1.2;
+   
+}
+
+.card2 .iconeY3 {
+    background-image: url(img/Y3.svg); 
+    padding: 12px;
+    width: 100px; /* tamanho do botão de musica/comida artura */
+    height: 100px;/* tamanho do botão de musica/comida largura*/
+    text-decoration: none;
+    /* border-radius: 8px; */
+    transition: 0.5s ease; /* Adiciona transição suave para o movimento */
+    position: relative;
+    top: 0; /* Posição inicial do botão */
+    display: block; /* Garantir que o elemento seja um bloco */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+
+}
+
+.card2:hover .iconeY3 {
+    top: 20%; /* Move o botão para baixo ao passar o mouse */
+   
+}
+.card2:hover .iconeY3:hover {
+    scale: 1.2;
+   
+}
+
+/* card sudeste */
+
+.card3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 700px;
+    position: relative;
+    background-image: url('img/Card-Sudeste.png');
+    background-position: center; /* Centraliza a imagem */
+    
+    box-shadow: 0px 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.7s;
+    opacity: 0.5;
+}
+
+.card3:hover {
+    width: 2000px; /* quando passar o mause almentar o bloco apenas sua largura */
+    opacity: 1;
+}
+
+.card3 .img-box {
+    position: absolute;
+    text-align: center; /* alinhar ao centro */
+    width: 350px;
+    height: auto; 
+    top: 100px;
+    transition: 0.5s;
+    
+}
+
+.card3:hover .img-box { /* aki onde a img mexe, usar para girar o mapa da região do Brasil */
+    top: 10px;
+    scale: 0.75; /* diminui a img, talvez tirar */
+}
+
+.card3 .img-box img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    
+}
+
+.card3 .content {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    padding: 0px 30px;
+    text-align: center;
+    height: 30px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card3:hover .content {
+    top: 130px; /* aki pra colocar o texto certo com a imagem */
+    height: 550px;
+
+}
+
+.card3 .iconeR1 {
+    background-image: url(img/R1.svg); 
+    padding: 15px;
+    width: 100px; /* tamanho do botão de musica/comida artura */
+    height: 100px;/* tamanho do botão de musica/comida largura*/
+    text-decoration: none;
+    /* border-radius: 8px; */
+    transition: 0.5s ease; /* Adiciona transição suave para o movimento */
+    position: relative;
+    top: 0; /* Posição inicial do botão */
+    display: block; /* Garantir que o elemento seja um bloco */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+
+}
+
+.card3:hover .iconeR1 {
+    top: 20%; /* Move o botão para baixo ao passar o mouse */
+   
+}
+
+.card3:hover .iconeR1:hover {
+    scale: 1.2;
+   
+}
+
+.card3 .iconeR2 {
+    background-image: url(img/R2.svg); 
+    padding: 12px;
+    width: 100px; /* tamanho do botão de musica/comida artura */
+    height: 100px;/* tamanho do botão de musica/comida largura*/
+    text-decoration: none;
+    /* border-radius: 8px; */
+    transition: 0.5s ease; /* Adiciona transição suave para o movimento */
+    position: relative;
+    top: 0; /* Posição inicial do botão */
+    display: block; /* Garantir que o elemento seja um bloco */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+}
+
+.card3:hover .iconeR2 {
+    top: 20%; /* Move o botão para baixo ao passar o mouse */
+   
+}
+.card3:hover .iconeR2:hover {
+    scale: 1.2;
+   
+}
+
+.card3 .iconeR3 {
+    background-image: url(img/R3.svg); 
+    padding: 12px;
+    width: 100px; /* tamanho do botão de musica/comida artura */
+    height: 100px;/* tamanho do botão de musica/comida largura*/
+    text-decoration: none;
+    /* border-radius: 8px; */
+    transition: 0.5s ease; /* Adiciona transição suave para o movimento */
+    position: relative;
+    top: 0; /* Posição inicial do botão */
+    display: block; /* Garantir que o elemento seja um bloco */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+
+}
+
+.card3:hover .iconeR3 {
+    top: 20%; /* Move o botão para baixo ao passar o mouse */
+   
+}
+.card3:hover .iconeR3:hover {
+    scale: 1.2;
+   
+}
+
+/* card sul */
+
+.card4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 700px;
+    position: relative;
+    background-image: url('img/Card\ -\ Sul.png');
+    background-position: center; /* Centraliza a imagem */
+    /* border-radius: 20px; */
+    box-shadow: 0px 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.7s;
+    opacity: 0.5;
+}
+
+.card4:hover {
+    width: 2000px; /* quando passar o mause almentar o bloco apenas sua largura */
+    opacity: 1;
+}
+
+.card4 .img-box {
+    position: absolute;
+    text-align: center; /* alinhar ao centro */
+    width: 350px;
+    height: auto; 
+    top: 100px;
+    transition: 0.5s;
+}
+
+.card4:hover .img-box { /* aki onde a img mexe, usar para girar o mapa da região do Brasil */
+    top: 10px;
+    scale: 0.75; /* diminui a img, talvez tirar */
+}
+
+.card4 .img-box img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    
+}
+
+.card4 .content {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    padding: 0px 30px;
+    text-align: center;
+    height: 30px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card4:hover .content {
+    top: 130px; /* aki pra colocar o texto certo com a imagem */
+    height: 550px;
+
+}
+
+.card4 .iconeA1 {
+    background-image: url(img/A1.svg); 
+    padding: 15px;
+    width: 100px; /* tamanho do botão de musica/comida artura */
+    height: 100px;/* tamanho do botão de musica/comida largura*/
+    text-decoration: none;
+    /* border-radius: 8px; */
+    transition: 0.5s ease; /* Adiciona transição suave para o movimento */
+    position: relative;
+    top: 0; /* Posição inicial do botão */
+    display: block; /* Garantir que o elemento seja um bloco */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+
+}
+
+.card4:hover .iconeA1 {
+    top: 20%; /* Move o botão para baixo ao passar o mouse */
+   
+}
+
+.card4:hover .iconeA1:hover {
+    scale: 1.2;
+   
+}
+
+.card4 .iconeA2 {
+    background-image: url(img/A2.svg); 
+    padding: 12px;
+    width: 100px; /* tamanho do botão de musica/comida artura */
+    height: 100px;/* tamanho do botão de musica/comida largura*/
+    text-decoration: none;
+    /* border-radius: 8px; */
+    transition: 0.5s ease; /* Adiciona transição suave para o movimento */
+    position: relative;
+    top: 0; /* Posição inicial do botão */
+    display: block; /* Garantir que o elemento seja um bloco */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+}
+
+.card4:hover .iconeA2 {
+    top: 20%; /* Move o botão para baixo ao passar o mouse */
+   
+}
+.card4:hover .iconeA2:hover {
+    scale: 1.2;
+   
+}
+
+.card4 .iconeA3 {
+    background-image: url(img/A3.svg); 
+    padding: 12px;
+    width: 100px; /* tamanho do botão de musica/comida artura */
+    height: 100px;/* tamanho do botão de musica/comida largura*/
+    text-decoration: none;
+    /* border-radius: 8px; */
+    transition: 0.5s ease; /* Adiciona transição suave para o movimento */
+    position: relative;
+    top: 0; /* Posição inicial do botão */
+    display: block; /* Garantir que o elemento seja um bloco */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+
+}
+
+.card4:hover .iconeA3 {
+    top: 20%; /* Move o botão para baixo ao passar o mouse */
+   
+}
+.card4:hover .iconeA3:hover {
+    scale: 1.2;
+   
+}
