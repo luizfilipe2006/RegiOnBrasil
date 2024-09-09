@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1530.18 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: url(#RegiOnBrasil);
+      }
+    </style>
+    <linearGradient id="RegiOnBrasil" x1="1335.37" y1="-30.28" x2="194.81" y2="1110.28" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ec666b"/>
+      <stop offset=".23" stop-color="#fdc731"/>
+      <stop offset=".49" stop-color="#8cbf33"/>
+      <stop offset=".76" stop-color="#4994c4"/>
+      <stop offset="1" stop-color="#6d4f9c"/>
+    </linearGradient>
+  </defs>
+  <path class="cls-2" d="M1498.21,169.3c-17.6-66.26-69.45-118.45-135.29-136.16C1243.6.95,765.09.95,765.09.95c0,0-478.5,0-597.83,32.19C101.42,50.85,49.56,103.04,31.97,169.3,0,289.4,0,540,0,540c0,0,0,250.58,31.97,370.7,17.59,66.27,69.45,118.44,135.28,136.17,119.33,32.17,597.83,32.17,597.83,32.17,0,0,478.51,0,597.83-32.17,65.85-17.72,117.69-69.9,135.29-136.16,31.98-120.12,31.98-370.7,31.98-370.7,0,0,0-250.6-31.98-370.7"/>
+  <path class="cls-1" d="M596.47,767.52l399.93-227.51-399.93-227.53v455.04Z"/>
+</svg>
