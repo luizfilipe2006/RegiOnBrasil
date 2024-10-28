@@ -18,6 +18,22 @@
             color: #000000;
         }
 
+        .celebrando-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px; /* Ajuste este valor conforme necessário */
+}
+
+.celebrando-img {
+    max-width: 100%;
+    height: auto;
+    width: 1832px;
+    max-height: 376px;
+}
+
+
         .hero-section {
             background-size: cover;
             background-position: center;
@@ -25,6 +41,15 @@
             color: white;
             text-align: center;
             position: relative;
+        }
+
+        .hero-section p {
+            font-size: 1.5em;
+            font-weight: bold;
+            background: linear-gradient(to right, #ff0008, #FFC82F, #8CCA29, #4895C5, #6a00ff);
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: gradient-animation 5s infinite;
         }
 
         .hero-section::after {
@@ -78,19 +103,14 @@
         }
 
         .news-grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
-gap: 20px;
-margin-top: 80px;
-position: relative;
-z-index: 2;
-}
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 80px;
+            position: relative;
+            z-index: 2;
+        }
 
-@media (max-width: 768px) {
-.news-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-}
         .news-item {
             background-color: white;
             border-radius: 10px;
@@ -224,13 +244,13 @@ z-index: 2;
 <header>
     <nav class="navbar navbar-expand-lg"> <!-- menu (bootstrap) -->
         <div class="container-fluid">
-            <a class="navbar-brand" href="https://luizfilipe2006.github.io/RegiOnBrasil/"><img src="img/Logo branca.svg" alt="Logo" style="height: 45px;"></a> <!-- logo -->
+            <a class="navbar-brand" href="#"><img src="img/Logo branca.svg" alt="Logo" style="height: 45px;"></a> <!-- logo -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-expanded="false">
                 <span class="navbar-toggler-icon"></span>
             </button> <!-- botão de menu responsivo -->
             <div class="collapse navbar-collapse" id="navbarNavDropdown"> <!-- conteúdo do menu -->
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="https://luizfilipe2006.github.io/RegiOnBrasil/">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Index.html">HOME</a></li>
                     <li class="nav-item"><a class="nav-link" href="Brasil.html">BRASIL</a></li>
                     <li class="nav-item"><a class="nav-link" href="Notícias.html">NOTÍCIAS</a></li>
                 </ul>
@@ -298,9 +318,9 @@ z-index: 2;
             </div>
     </section>
 <!-- FIM CARTÕES E INICIO BLOCO 2-->
-    <section class="parallax-section"> <!-- classe css com animação -->
-        <h2>Celebrando a Diversidade Cultural ao Redor do Mundo</h2>
-    </section>
+<div class="celebrando-container">
+    <img src="img/Celebrando.png" alt="Celebrando" class="celebrando-img">
+</div>
 <!-- FIM BLOCO 2 E INICIO SOBRE NÓS -->
     <section class="container about-section">
         <h2>Sobre a RegiOnBrasil</h2>
