@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> <!-- poppins -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- fonte para a seta -->
+    <link rel="stylesheet" href="Z RegiOnBrasil.css"> <!-- css -->
+    <link rel="icon" href="img/Logo branca.svg" type="image/x-icon"> <!-- logo -->
+    <title>Home</title>
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 10px;
+      }
+      .section {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        animation: fadeInUp 1s ease;
+      }
+      .section:nth-child(odd) {
+        flex-direction: row;
+      }
+      .section:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+      .section:nth-child(1) {
+        background: #f2b000;
+      }
+      .section:nth-child(2) {
+        background: #0b7bc9;
+      }
+      .section:nth-child(3) {
+        background: #78c100;
+      }
+      .video {
+        flex: 1;
+        padding: 10px;
+      }
+      .video iframe {
+        width: 100%;
+        height: 200px;
+        border: none;
+      }
+      .content {
+        flex: 1;
+        padding: 10px;
+        color: #fff;
+      }
+      .content h2 {
+        margin-top: 0;
+        font-weight: 600;
+      }
+      .content p {
+        color: #f0f0f0;
+      }
+  
+      /* Animação */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://luizfilipe2006.github.io/RegiOnBrasil/"><img src="img/Logo branca.svg" alt="Logo" style="height: 45px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="https://luizfilipe2006.github.io/RegiOnBrasil/">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Brasil.html">BRASIL</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Notícias.html">NOTÍCIAS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Mural.html">MURAL</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Vídeos.html">VÍDEOS</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+  <div class="container">
+    <!-- Bloco 1 -->
+    <div class="section">
+      <div class="video">
+        <iframe src="https://www.youtube.com/channel/UCiTMiYN3QFQKB2zYKcAIbeQ" allowfullscreen></iframe>
+      </div>
+      <div class="content">
+        <h2>Bem vindos a REGIONBRASIL</h2>
+        <p>Conheça a nossa startup e descubra como estamos valorizando a diversidade cultural brasileira!</p>
+      </div>
+    </div>
+
+    <!-- Bloco 2 -->
+    <div class="section">
+      <div class="video">
+        <iframe src="https://www.youtube.com/" allowfullscreen></iframe>
+      </div>
+      <div class="content">
+        <h2>Conheça nosso SITE</h2>
+        <p>Conheça o site da REGIONBRASIL, um portal para a diversidade cultural!</p>
+      </div>
+    </div>
+
+    <!-- Bloco 3 -->
+    <div class="section">
+      <div class="video">
+        <iframe src="https://www.youtube.com/" allowfullscreen></iframe>
+      </div>
+      <div class="content">
+        <h2>Mini documentário</h2>
+        <p>Veja o desenvolvimento do nosso projeto!</p>
+      </div>
+    </div>
+    </div>
+  </div>
+  <footer class="roda"> <!-- ícones seguindo a paleta -->
+    <div class="down_meio">#RegiOnBrasil</div>
+    <div class="down_down">
+        <span>
+            <a href="https://www.tiktok.com" class="link">
+                <img src="img/TIKTOK colorid.svg" alt="TikTok">
+            </a>
+            <a href="https://www.tiktok.com" class="link">@RegiOnBrasil</a>
+        </span>
+        <span>
+            <a href="https://www.instagram.com/regionbrasil.doe/" class="link">
+                <img src="img/INSTA colorid.svg" alt="Instagram">
+            </a>
+            <a href="https://www.instagram.com/regionbrasil.doe/" class="link">RegiOnBrasil</a>
+        </span>
+        <span>
+            <a href="https://www.youtube.com/channel/UCiTMiYN3QFQKB2zYKcAIbeQ" class="link">
+                <img src="img/YOUTUBE colorid.svg" alt="YouTube">
+            </a>
+            <a href="https://www.youtube.com/channel/UCiTMiYN3QFQKB2zYKcAIbeQ" class="link">@RegiOnBrasil</a>
+        </span>
+    </div>
+    <div class="mt-3">
+        <p class="educational-note"><em>todos os recursos são usados para fins educativos</em></p>
+    </div>
+</footer>
+<!--FIM RODAPE-->
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+<script src="Z RegiOnBrasil.js"></script> <!-- script externo -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
